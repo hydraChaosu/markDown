@@ -13,8 +13,14 @@ function App() {
         id="editor"
         cols="30"
         rows="10"
+        className="area"
       ></textarea>
-      <ReactMarkdown source={text} escapeHtml={false} id="preview" />
+      <ReactMarkdown
+        source={text}
+        escapeHtml={false}
+        id="preview"
+        className="markdown"
+      />
     </div>
   );
 }
